@@ -5,8 +5,10 @@ base*)
 Program Pzim ;
   var sb, sa, impost:real;
 Begin
-  write('Escreva seu salário base:') ;
-	read(sb) ;
-impost:=(sb*10/100);
-	write('Salário a receber:', sb-impost+50);  
+    textcolor(7);
+  write('Escreva seu salário base: ') ;
+    read(sb) ; writeln;
+  impost:=(sb*10/100);
+    write('Salário a receber: ', (sb-impost+50):2:2 );
+	readkey;  
 End.
