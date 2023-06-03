@@ -1,5 +1,4 @@
-(* 1 Faça um programa que receba quatro números inteiros, 
-calcule e mostre a soma desses números.*)
+(* 1 Faça um programa que receba quatro números inteiros, calcule e mostre a soma desses números.*)
 
 Program Pzim ;
  var n1, n2, n3, n4, soma: integer;
