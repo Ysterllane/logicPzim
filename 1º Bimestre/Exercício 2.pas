@@ -3,7 +3,7 @@
 Program Pzim ;
    var nt1, nt2, nt3, ma : real;
 Begin
-	 texcolor(5);
+	 textcolor(5);
 	 write('Diga a nota 1: ');
 	  read(nt1);
 	 write('Diga a nota 2: ');
