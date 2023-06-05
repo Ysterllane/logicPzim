@@ -138,67 +138,67 @@ Begin
  		        '2': Begin    
 			        ClrScr;
                                 TextColor(10);
-			//INDENTAR													Writeln('2 - Faça um algoritmo que receba três notas, calcule e mostre a média aritmética entre elas.');  
-																writeln(' ');
-			      		        				Writeln('==================================================================');  writeln;
+				Writeln('2 - Faça um algoritmo que receba três notas, calcule e mostre a média aritmética entre elas.');  
+				writeln;
+			      	Writeln('==================================================================');  writeln;
                                 TextColor(4);
                                 write('Diga a nota 1: '); read(nt1); writeln;
-	                              write('Diga a nota 2: '); read(nt2); writeln;
-	                              write('Diga a nota 3: '); read(nt3); writeln;
+	                        write('Diga a nota 2: '); read(nt2); writeln;
+	                        write('Diga a nota 3: '); read(nt3); writeln;
                                    ma:= (nt1+nt2+nt3)/3;	 
                                 writeln('Sua média aritimética é: ', ma:2:2);  writeln;
                                    adicao := nt1 + nt2 + nt3 + nt4;
-																writeln('Sua soma é: ', adicao:2:2); writeln;
+				writeln('Sua soma é: ', adicao:2:2); writeln;
                                 TextColor(10); 
-      										      Writeln('------------------------------------------------------------------'); writeln;
+      				Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 	
- 										            Writeln('Atividade concluida! Tecle algo para continuar.');
- 										            Readkey;
-						                 End;
-						            '3': Begin
-												        ClrScr;
+ 			        Writeln('Atividade concluida! Tecle algo para continuar.');
+ 				Readkey;
+			     End;
+			'3': Begin
+				ClrScr;
                                 TextColor(10);
-																Writeln('3 - Faça um algoritmo que receba três notas e seus respectivos pesos, calcule e mostre a média ponderada.'); 
-																writeln;
-			      		        				Writeln('=================================================================='); writeln;
+				Writeln('3 - Faça um algoritmo que receba três notas e seus respectivos pesos, calcule e mostre a média ponderada.'); 
+				writeln;
+			      	Writeln('=================================================================='); writeln;
                                 TextColor(4);    
-															  write('Diga a nota 1: '); read(nt1); writeln;
-	                                write('Diga o peso 1: '); read(p1); writeln;
-	                              write('Diga a nota 2: '); read(nt2); writeln;
-	                                write('Diga o peso 2: '); read(p2); writeln;
-	                              write('Diga a nota 3: '); read(nt3); writeln;
-	                                write('Diga o peso 3: '); read(p3); writeln;
+				write('Diga a nota 1: '); read(nt1); writeln;
+	                        write('Diga o peso 1: '); read(p1); writeln;
+	                        write('Diga a nota 2: '); read(nt2); writeln;
+	                        write('Diga o peso 2: '); read(p2); writeln;
+	                        write('Diga a nota 3: '); read(nt3); writeln;
+	                        write('Diga o peso 3: '); read(p3); writeln;
 	  
                                 mp:= (nt1 * p1 + nt2 * p2 + nt3 * p3)/(p1+p2+p3);	 
                                 write('Sua média ponderada é: ', mp:2:2); writeln; writeln;
                                 TextColor(10); 
-      										      Writeln('------------------------------------------------------------------'); writeln;
+      				Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
                                 Writeln('Atividade concluida! Tecle algo para continuar.');
- 										            Readkey;
-						                 End;     
+ 				Readkey;
+			     End;     
                         '4': Begin    
-															 ClrScr;
+				ClrScr;
                                 TextColor(10);
-																Writeln('4 - Algoritmo que receba o salário de um funcionário, calcule e mostre o novo salário, com um aumento de 25%');
-			      		        				writeln(' ');
-																Writeln('==================================================================');  writeln;
+				Writeln('4 - Algoritmo que receba o salário de um funcionário, calcule e mostre o novo salário, com um aumento de 25%');
+			      	writeln(' ');
+				Writeln('==================================================================');  writeln;
                                 TextColor(4);
-																write('Salário: '); read(s); writeln;
+				write('Salário: '); read(s); writeln;
                                    nvs:=(s*25)/100+s;
                                 write('Novo salário: ', nvs:2:2); writeln; writeln;
-																TextColor(10); 
-      										      Writeln('------------------------------------------------------------------'); writeln;
+				TextColor(10); 
+      				Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
                                 Writeln('Atividade concluida! Tecle algo para continuar.');
- 										            Readkey; 
-						                 End;
-						            '5': Begin    
-															  ClrScr;
+ 				Readkey; 
+			      End;
+			 '5': Begin    
+				ClrScr;
                                 TextColor(10);
-																Writeln('5 - Algoritmo que recebe salário de um funcionário e o aumento, calcule e mostre o novo salário.'); 
-																writeln;
-			      		        				Writeln('=================================================================='); writeln;
+				Writeln('5 - Algoritmo que recebe salário de um funcionário e o aumento, calcule e mostre o novo salário.'); 
+				writeln;
+			      	Writeln('=================================================================='); writeln;
                                 TextColor(4);
                                 write('Salário: '); read(s); writeln;
                                 write('Percentual de aumento: '); read(pa); writeln;
@@ -206,69 +206,69 @@ Begin
                                    va:=(s*pa)/100;
                                 writeln('Novo salário: ', nvs:2:2); writeln;
                                 write('Valor do aumento: ', va:2:2); writeln; writeln;
-																TextColor(10); 
-      										      Writeln('------------------------------------------------------------------'); writeln;
+				TextColor(10); 
+      				Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
                                 Writeln('Atividade concluida! Tecle algo para continuar.');
- 										            Readkey; 
-						                 End;
-												'6': Begin    
-															  ClrScr;
+ 				Readkey; 
+			      End;
+			 '6': Begin    
+				ClrScr;
                                 TextColor(10);
-																Writeln('6 - Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem + 5 por cento e paga imposto de 7%');
-			      		        				writeln(' ');
-																Writeln('=================================================================='); writeln;
+				Writeln('6 - Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem + 5 por cento e paga imposto de 7%');
+			      	writeln;
+				Writeln('=================================================================='); writeln;
                                 TextColor(4);
                                 write('Salário: '); read(s); writeln;
                                    grat:= (s*5/100+s);
                                    impost:= grat-(grat*7/100);
                                 writeln('Salário a receber: ', impost:2:2 ); writeln;
-																TextColor(10); 
-      										      Writeln('------------------------------------------------------------------'); writeln;
+				TextColor(10); 
+      				Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
                                 Writeln('Atividade concluida! Tecle algo para continuar.');
- 										            Readkey; 
-						                 End;
-												'7': Begin    
-															  ClrScr;
+ 				Readkey; 
+			      End;
+			 '7': Begin    
+				ClrScr;
                                 TextColor(10);
-																Writeln('7 - Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem aumento de R$ 50 e imposto de 10%');
-			      		        				writeln;
-																Writeln('=================================================================='); writeln;
+				Writeln('7 - Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem aumento de R$ 50 e imposto de 10%');
+			      	writeln;
+				Writeln('=================================================================='); writeln;
                                 TextColor(4);
                                 write('Escreva seu salário base: '); read(sb) ; writeln;
                                    impost:=(sb*10/100);
-	                              write('Salário a receber: ', sb-impost+50:2:2); writeln; writeln;
-	                              TextColor(10); 
-      										      Writeln('------------------------------------------------------------------'); writeln;
+	                        write('Salário a receber: ', sb-impost+50:2:2); writeln; writeln;
+	                        TextColor(10); 
+      				Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
                                 Writeln('Atividade concluida! Tecle algo para continuar.');
- 										            Readkey;
-						                 End;
-												'8': Begin    
-															  ClrScr;
+ 				Readkey;
+			      End;
+			 '8': Begin    
+				ClrScr;
                                 TextColor(10);
-																Writeln('8 - Algoritmo que receba o valor de um depósito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.');
-			      		        				writeln(' ');
-																Writeln('=================================================================='); writeln;
+				Writeln('8 - Algoritmo que receba o valor de um depósito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.');
+			      	writeln;
+				Writeln('=================================================================='); writeln;
                                 TextColor(4);
                                 write('Digite o valor do depósito: '); read(d); writeln;
                                 write('Digite o valor da taxa de juros: '); read(txj); writeln;
                                 writeln('Rendimento: ', d*txj/100:2:2); writeln;
                                 write('Valor total depois do rendimento: ', (d*txj/100)+d:2:2); writeln; writeln;
                                 TextColor(10); 
-      										      Writeln('------------------------------------------------------------------'); writeln;
+      				 Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
                                 Writeln('Atividade concluida! Tecle algo para continuar.');
- 										            Readkey;
-						                 End; 		  		 		      
+ 				Readkey;
+			      End; 		  		 		      
                    End;
 
                 end
                 // Fim das resolucoes das questões da atividade 1
               end
        else
-					begin
+	  begin
              textcolor(12);
              textbackground(4);
              Gotoxy (20,15);
