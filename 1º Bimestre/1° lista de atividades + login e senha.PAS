@@ -1,4 +1,4 @@
-                                          { Programa: Sistema de acesso a atividades de lÛgica de programaÁ„o
+{ Programa: Sistema de acesso a atividades de l√≥gica de programa√ß√£o
   Data    : 04/05/2023
   Autor   : Ysterllane }
 
@@ -12,23 +12,23 @@ Var cod, pw, n1, n2, n3, n4, soma, s, nvs, pa, va, grat, impost, sb, d, txj, r, 
 Begin
 
   Gotoxy (20,12);
-  Write ('Usu·rio: ');
+  Write ('Usu√°rio: ');
   Readln(cod);
     
-  if cod = 1234 then   // Se o cÛdigo do usuario for correto
-	   Begin             // no desvio condicional, o bloco È iniciado/acessado e seguido.
+  if cod = 1234 then   // Se o c√≥digo do usuario for correto
+	   Begin             // no desvio condicional, o bloco √© iniciado/acessado e seguido.
 
        Gotoxy (20,13);
        Write ('Senha  : ');
-	     Read  (pw);     // A senha ser· lida, porque se o codigo do usu·rio foi correto/verdadeiro: "cod = 1234" = true.
+	     Read  (pw);     // A senha ser√° lida, porque se o codigo do usu√°rio foi correto/verdadeiro: "cod = 1234" = true.
        
-			 if pw = 9999 then   // Agora testa a senha, do mesmo modo que testado o codigo do usu·rio: "pw = 9999" = true ou false ?
+			 if pw = 9999 then   // Agora testa a senha, do mesmo modo que testado o codigo do usu√°rio: "pw = 9999" = true ou false ?
 					begin
              textcolor(1);        // cor para letras (0-15)
              textbackground(15);  // cor para o fundo (0-15)
              Gotoxy (20,15);
 			       Write (' => Acesso Permitido! Tecle Algo para continuar.');  // Desvio condicional para resultado: TRUE
-             Readkey;  { Aguarda atÈ uma tecla seja pressionada }	
+             Readkey;  { Aguarda at√© uma tecla seja pressionada }	
              
              // No blocos a partir deste ponto serao construidos as rotinas de acesso 
              
@@ -51,11 +51,11 @@ Begin
              Writeln('------------------------');             
              TextColor(7);                         
              Gotoxy (30,17);                          
-             Write('Entre com a opÁ„o: '); Readln (opcao);
+             Write('Entre com a op√ß√£o: '); Readln (opcao);
              opcao := Upcase(opcao);
              // Fim do menu principal
              
-             // Inicio do menu secund·rio, com a seleÁ„o tipo: CASO
+             // Inicio do menu secund√°rio, com a sele√ß√£o tipo: CASO
              Case opcao of 
  						      '1': Begin    
                           ClrScr;
@@ -69,26 +69,26 @@ Begin
 										      Writeln('================================================================================');
                           Writeln;
 													TextColor(7);
-													Writeln('1 - FaÁa um algoritmo que receba quatro n˙meros inteiros, calcule e mostre a soma desses n˙meros.');
+													Writeln('1 - Fa√ßa um algoritmo que receba quatro n√∫meros inteiros, calcule e mostre a soma desses n√∫meros.');
                           Writeln;
-													Writeln('2 - FaÁa um algoritmo que receba trÍs notas, calcule e mostre a mÈdia aritmÈtica entre elas.');
+													Writeln('2 - Fa√ßa um algoritmo que receba tr√™s notas, calcule e mostre a m√©dia aritm√©tica entre elas.');
                           Writeln;
-													Writeln('3 - FaÁa um algoritmo que receba trÍs notas e seus respectivos pesos, calcule e mostre a mÈdia ponderada.');
+													Writeln('3 - Fa√ßa um algoritmo que receba tr√™s notas e seus respectivos pesos, calcule e mostre a m√©dia ponderada.');
                           Writeln;
-													Writeln('4 - Algoritmo que receba o sal·rio de um funcion·rio, calcule e mostre o novo sal·rio, com um aumento de 25%');
+													Writeln('4 - Algoritmo que receba o sal√°rio de um funcion√°rio, calcule e mostre o novo sal√°rio, com um aumento de 25%');
                           Writeln;
-													Writeln('5 - Algoritmo que recebe sal·rio de um funcion·rio e o aumento, calcule e mostre o novo sal·rio.');
+													Writeln('5 - Algoritmo que recebe sal√°rio de um funcion√°rio e o aumento, calcule e mostre o novo sal√°rio.');
                           Writeln;
-													Writeln('6 - Algoritmo que receba o sal·rio de um funcion·rio, calcule o sal·rio, sabendo que tem + 5 por cento e paga imposto de 7%');
+													Writeln('6 - Algoritmo que receba o sal√°rio de um funcion√°rio, calcule o sal√°rio, sabendo que tem + 5 por cento e paga imposto de 7%');
                           Writeln;
-													Writeln('7 - Algoritmo que receba o sal·rio de um funcion·rio, calcule o sal·rio, sabendo que tem aumento de R$ 50 e imposto de 10%');
+													Writeln('7 - Algoritmo que receba o sal√°rio de um funcion√°rio, calcule o sal√°rio, sabendo que tem aumento de R$ 50 e imposto de 10%');
                           Writeln;
-													Writeln('8 - Algoritmo que receba o valor de um depÛsito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.'); 	
+													Writeln('8 - Algoritmo que receba o valor de um dep√≥sito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.'); 	
 										      Writeln; TextColor(10);
 													Writeln('================================================================================');
                           TextColor(4);
 													Writeln;
-													Write('Entre com a opÁ„o: '); Readln (opAtiv);
+													Write('Entre com a op√ß√£o: '); Readln (opAtiv);
                           opAtiv := Upcase(opAtiv);
                           end;
                        End;
@@ -102,34 +102,34 @@ Begin
                           TextColor(10); Writeln;
 										      Writeln('------------------------------------------------------------------');
                           TextColor(7); Writeln;	
-										      Writeln(' 1 - [EM CONSTRU«√O... Tecle Algo para continuar!');
+										      Writeln(' 1 - [EM CONSTRU√á√ÉO... Tecle Algo para continuar!');
                           TextColor(10); Writeln;
  										      Writeln('==================================================================');
- 			                    Readkey;  { Aguarda atÈ uma tecla seja pressionada }	
+ 			                    Readkey;  { Aguarda at√© uma tecla seja pressionada }	
 													TextColor(10);
 											 End;
                         
 
               End;
-              // Fim do menu secund·rio
+              // Fim do menu secund√°rio
               
-             // Inicio das resolucoes das questıes da atividade 1
+             // Inicio das resolucoes das quest√µes da atividade 1
              if opcao = '1' then
                 Begin
                    Case opAtiv of 
  			      			      '1': Begin    
                                 ClrScr;
                                 TextColor(10);
-																Writeln(' 1 - FaÁa um programa que receba quatro n˙meros inteiros, calcule e mostre a soma desses n˙meros.'); 
+																Writeln(' 1 - Fa√ßa um programa que receba quatro n√∫meros inteiros, calcule e mostre a soma desses n√∫meros.'); 
 																writeln(' ');
 			      		        				Writeln('==================================================================');
                                 TextColor(4); writeln(' ');
-                                write('Digite um n˙mero: '); readln(n1); writeln;
-                                write('Digite um n˙mero: '); readln(n2); writeln;
-                                write('Digite um n˙mero: '); readln(n3); writeln;
-                                write('Digite um n˙mero: '); readln(n4); writeln;
+                                write('Digite um n√∫mero: '); readln(n1); writeln;
+                                write('Digite um n√∫mero: '); readln(n2); writeln;
+                                write('Digite um n√∫mero: '); readln(n3); writeln;
+                                write('Digite um n√∫mero: '); readln(n4); writeln;
                                    soma := (n1 + n2 + n3 + n4);
-																writeln('Sua soma È: ',soma:2:2); writeln;
+																writeln('Sua soma √©: ',soma:2:2); writeln;
                                 TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 	
@@ -139,7 +139,7 @@ Begin
  			      			      '2': Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('2 - FaÁa um algoritmo que receba trÍs notas, calcule e mostre a mÈdia aritmÈtica entre elas.');  
+																Writeln('2 - Fa√ßa um algoritmo que receba tr√™s notas, calcule e mostre a m√©dia aritm√©tica entre elas.');  
 																writeln(' ');
 			      		        				Writeln('==================================================================');  writeln;
                                 TextColor(4);
@@ -147,9 +147,9 @@ Begin
 	                              write('Diga a nota 2: '); read(nt2); writeln;
 	                              write('Diga a nota 3: '); read(nt3); writeln;
                                    ma:= (nt1+nt2+nt3)/3;	 
-                                writeln('Sua mÈdia aritimÈtica È: ', ma:2:2);  writeln;
+                                writeln('Sua m√©dia aritim√©tica √©: ', ma:2:2);  writeln;
                                    adicao := nt1 + nt2 + nt3 + nt4;
-																writeln('Sua soma È: ', adicao:2:2); writeln;
+																writeln('Sua soma √©: ', adicao:2:2); writeln;
                                 TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 	
@@ -159,7 +159,7 @@ Begin
 						            '3': Begin
 												        ClrScr;
                                 TextColor(10);
-																Writeln('3 - FaÁa um algoritmo que receba trÍs notas e seus respectivos pesos, calcule e mostre a mÈdia ponderada.'); 
+																Writeln('3 - Fa√ßa um algoritmo que receba tr√™s notas e seus respectivos pesos, calcule e mostre a m√©dia ponderada.'); 
 																writeln;
 			      		        				Writeln('=================================================================='); writeln;
                                 TextColor(4);    
@@ -171,7 +171,7 @@ Begin
 	                                write('Diga o peso 3: '); read(p3); writeln;
 	  
                                 mp:= (nt1 * p1 + nt2 * p2 + nt3 * p3)/(p1+p2+p3);	 
-                                write('Sua mÈdia ponderada È: ', mp:2:2); writeln; writeln;
+                                write('Sua m√©dia ponderada √©: ', mp:2:2); writeln; writeln;
                                 TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
@@ -181,13 +181,13 @@ Begin
                         '4': Begin    
 															 ClrScr;
                                 TextColor(10);
-																Writeln('4 - Algoritmo que receba o sal·rio de um funcion·rio, calcule e mostre o novo sal·rio, com um aumento de 25%');
+																Writeln('4 - Algoritmo que receba o sal√°rio de um funcion√°rio, calcule e mostre o novo sal√°rio, com um aumento de 25%');
 			      		        				writeln(' ');
 																Writeln('==================================================================');  writeln;
                                 TextColor(4);
-																write('Sal·rio: '); read(s); writeln;
+																write('Sal√°rio: '); read(s); writeln;
                                    nvs:=(s*25)/100+s;
-                                write('Novo sal·rio: ', nvs:2:2); writeln; writeln;
+                                write('Novo sal√°rio: ', nvs:2:2); writeln; writeln;
 																TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
@@ -197,15 +197,15 @@ Begin
 						            '5': Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('5 - Algoritmo que recebe sal·rio de um funcion·rio e o aumento, calcule e mostre o novo sal·rio.'); 
+																Writeln('5 - Algoritmo que recebe sal√°rio de um funcion√°rio e o aumento, calcule e mostre o novo sal√°rio.'); 
 																writeln;
 			      		        				Writeln('=================================================================='); writeln;
                                 TextColor(4);
-                                write('Sal·rio: '); read(s); writeln;
+                                write('Sal√°rio: '); read(s); writeln;
                                 write('Percentual de aumento: '); read(pa); writeln;
                                    nvs:=(s*pa)/100+s;
                                    va:=(s*pa)/100;
-                                writeln('Novo sal·rio: ', nvs:2:2); writeln;
+                                writeln('Novo sal√°rio: ', nvs:2:2); writeln;
                                 write('Valor do aumento: ', va:2:2); writeln; writeln;
 																TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
@@ -216,14 +216,14 @@ Begin
 												'6': Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('6 - Algoritmo que receba o sal·rio de um funcion·rio, calcule o sal·rio, sabendo que tem + 5 por cento e paga imposto de 7%');
+																Writeln('6 - Algoritmo que receba o sal√°rio de um funcion√°rio, calcule o sal√°rio, sabendo que tem + 5 por cento e paga imposto de 7%');
 			      		        				writeln(' ');
 																Writeln('=================================================================='); writeln;
                                 TextColor(4);
-                                write('Sal·rio: '); read(s); writeln;
+                                write('Sal√°rio: '); read(s); writeln;
                                    grat:= (s*5/100+s);
                                    impost:= grat-(grat*7/100);
-                                writeln('Sal·rio a receber: ', impost:2:2 ); writeln;
+                                writeln('Sal√°rio a receber: ', impost:2:2 ); writeln;
 																TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
@@ -233,13 +233,13 @@ Begin
 												'7': Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('7 - Algoritmo que receba o sal·rio de um funcion·rio, calcule o sal·rio, sabendo que tem aumento de R$ 50 e imposto de 10%');
+																Writeln('7 - Algoritmo que receba o sal√°rio de um funcion√°rio, calcule o sal√°rio, sabendo que tem aumento de R$ 50 e imposto de 10%');
 			      		        				writeln;
 																Writeln('=================================================================='); writeln;
                                 TextColor(4);
-                                write('Escreva seu sal·rio base: '); read(sb) ; writeln;
+                                write('Escreva seu sal√°rio base: '); read(sb) ; writeln;
                                    impost:=(sb*10/100);
-	                              write('Sal·rio a receber: ', sb-impost+50:2:2); writeln; writeln;
+	                              write('Sal√°rio a receber: ', sb-impost+50:2:2); writeln; writeln;
 	                              TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 
@@ -249,11 +249,11 @@ Begin
 												'8': Begin    
 															  ClrScr;
                                 TextColor(10);
-																Writeln('8 - Algoritmo que receba o valor de um depÛsito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.');
+																Writeln('8 - Algoritmo que receba o valor de um dep√≥sito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.');
 			      		        				writeln(' ');
 																Writeln('=================================================================='); writeln;
                                 TextColor(4);
-                                write('Digite o valor do depÛsito: '); read(d); writeln;
+                                write('Digite o valor do dep√≥sito: '); read(d); writeln;
                                 write('Digite o valor da taxa de juros: '); read(txj); writeln;
                                 writeln('Rendimento: ', d*txj/100:2:2); writeln;
                                 write('Valor total depois do rendimento: ', (d*txj/100)+d:2:2); writeln; writeln;
@@ -266,7 +266,7 @@ Begin
                    End;
 
                 end
-                // Fim das resolucoes das questıes da atividade 1
+                // Fim das resolucoes das quest√µes da atividade 1
               end
        else
 					begin
@@ -274,7 +274,7 @@ Begin
              textbackground(4);
              Gotoxy (20,15);
              Write (' <= Acesso Negado! Tecle Algo para continuar.');    // Desvio condicional Para resultado: FALSE
-             Readkey;  { Aguarda atÈ uma tecla seja pressionada }	             
+             Readkey;  { Aguarda at√© uma tecla seja pressionada }	             
           end   
      
    	 end 
@@ -283,8 +283,8 @@ Begin
      
 		 begin
         Gotoxy (20,14);
-        Writeln ('Usu·rio Inv·lido, Acesso Negado! Tecle Algo para continuar.');  // Desvio condicional Para resultado: FALSE do teste do cÛdigo do usu·rio  
-        Readkey;  { Aguarda atÈ uma tecla seja pressionada }	             
+        Writeln ('Usu√°rio Inv√°lido, Acesso Negado! Tecle Algo para continuar.');  // Desvio condicional Para resultado: FALSE do teste do c√≥digo do usu√°rio  
+        Readkey;  { Aguarda at√© uma tecla seja pressionada }	             
      end 
 																			
 End.
