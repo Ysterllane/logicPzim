@@ -16,18 +16,18 @@ Begin
   Readln(cod);
     
   if cod = 1234 then   // Se o código do usuario for correto
-	   Begin             // no desvio condicional, o bloco é iniciado/acessado e seguido.
+     Begin            // no desvio condicional, o bloco é iniciado/acessado e seguido.
 
        Gotoxy (20,13);
        Write ('Senha  : ');
-	     Read  (pw);     // A senha será lida, porque se o codigo do usuário foi correto/verdadeiro: "cod = 1234" = true.
+       Read  (pw);     // A senha será lida, porque se o codigo do usuário foi correto/verdadeiro: "cod = 1234" = true.
        
-			 if pw = 9999 then   // Agora testa a senha, do mesmo modo que testado o codigo do usuário: "pw = 9999" = true ou false ?
-					begin
+       if pw = 9999 then   // Agora testa a senha, do mesmo modo que testado o codigo do usuário: "pw = 9999" = true ou false ?
+	  begin
              textcolor(1);        // cor para letras (0-15)
              textbackground(15);  // cor para o fundo (0-15)
              Gotoxy (20,15);
-			       Write (' => Acesso Permitido! Tecle Algo para continuar.');  // Desvio condicional para resultado: TRUE
+	     Write (' => Acesso Permitido! Tecle Algo para continuar.');  // Desvio condicional para resultado: TRUE
              Readkey;  { Aguarda até uma tecla seja pressionada }	
              
              // No blocos a partir deste ponto serao construidos as rotinas de acesso 
@@ -57,57 +57,56 @@ Begin
              
              // Inicio do menu secundário, com a seleção tipo: CASO
              Case opcao of 
- 						      '1': Begin    
+ 		  '1': Begin    
                           ClrScr;
                           TextColor(10); 
-					        				Writeln('================================================================================');
+			  Writeln('================================================================================');
                           Writeln;
-													TextColor(4);
-                          Writeln(' Lista de atividades 1 ');
+			  Writeln(' Lista de atividades 1 ');
                           Writeln;
-													TextColor(10); 
-										      Writeln('================================================================================');
+			  TextColor(10); 
+			  Writeln('================================================================================');
                           Writeln;
-													TextColor(7);
-													Writeln('1 - Faça um algoritmo que receba quatro números inteiros, calcule e mostre a soma desses números.');
+			  TextColor(7);
+			  Writeln('1 - Faça um algoritmo que receba quatro números inteiros, calcule e mostre a soma desses números.');
                           Writeln;
-													Writeln('2 - Faça um algoritmo que receba três notas, calcule e mostre a média aritmética entre elas.');
+			  Writeln('2 - Faça um algoritmo que receba três notas, calcule e mostre a média aritmética entre elas.');
                           Writeln;
-													Writeln('3 - Faça um algoritmo que receba três notas e seus respectivos pesos, calcule e mostre a média ponderada.');
+			  Writeln('3 - Faça um algoritmo que receba três notas e seus respectivos pesos, calcule e mostre a média ponderada.');
                           Writeln;
-													Writeln('4 - Algoritmo que receba o salário de um funcionário, calcule e mostre o novo salário, com um aumento de 25%');
+			  Writeln('4 - Algoritmo que receba o salário de um funcionário, calcule e mostre o novo salário, com um aumento de 25%');
                           Writeln;
-													Writeln('5 - Algoritmo que recebe salário de um funcionário e o aumento, calcule e mostre o novo salário.');
+			  Writeln('5 - Algoritmo que recebe salário de um funcionário e o aumento, calcule e mostre o novo salário.');
                           Writeln;
-													Writeln('6 - Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem + 5 por cento e paga imposto de 7%');
+			  Writeln('6 - Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem + 5 por cento e paga imposto de 7%');
                           Writeln;
-													Writeln('7 - Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem aumento de R$ 50 e imposto de 10%');
+	         	  Writeln('7 - Algoritmo que receba o salário de um funcionário, calcule o salário, sabendo que tem aumento de R$ 50 e imposto de 10%');
                           Writeln;
-													Writeln('8 - Algoritmo que receba o valor de um depósito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.'); 	
-										      Writeln; TextColor(10);
-													Writeln('================================================================================');
+			  Writeln('8 - Algoritmo que receba o valor de um depósito e o da taxa de juros, calcule e mostre o valor do rendimento e o valor depois do rendimento.'); 	
+			  Writeln; TextColor(10);
+			  Writeln('================================================================================');
                           TextColor(4);
-													Writeln;
-													Write('Entre com a opção: '); Readln (opAtiv);
+			  Writeln;
+			  Write('Entre com a opção: '); Readln (opAtiv);
                           opAtiv := Upcase(opAtiv);
                           end;
                        End;
                     Case opcao of     
- 						      '2': Begin
+ 		  '2': Begin
                           ClrScr;
                           TextColor(10); 
-					        				Writeln('==================================================================');
+			  Writeln('==================================================================');
                           TextColor(4); Writeln;
                           Writeln(' Atividades 2');
                           TextColor(10); Writeln;
-										      Writeln('------------------------------------------------------------------');
+			  Writeln('------------------------------------------------------------------');
                           TextColor(7); Writeln;	
-										      Writeln(' 1 - [EM CONSTRUÇÃO... Tecle Algo para continuar!');
+			  Writeln(' 1 - [EM CONSTRUÇÃO... Tecle Algo para continuar!');
                           TextColor(10); Writeln;
- 										      Writeln('==================================================================');
- 			                    Readkey;  { Aguarda até uma tecla seja pressionada }	
-													TextColor(10);
-											 End;
+ 			  Writeln('==================================================================');
+ 		          Readkey;  { Aguarda até uma tecla seja pressionada }	
+			  TextColor(10);
+		        End;
                         
 
               End;
@@ -117,29 +116,29 @@ Begin
              if opcao = '1' then
                 Begin
                    Case opAtiv of 
- 			      			      '1': Begin    
+ 			'1': Begin    
                                 ClrScr;
                                 TextColor(10);
-																Writeln(' 1 - Faça um programa que receba quatro números inteiros, calcule e mostre a soma desses números.'); 
-																writeln(' ');
-			      		        				Writeln('==================================================================');
-                                TextColor(4); writeln(' ');
+				Writeln(' 1 - Faça um programa que receba quatro números inteiros, calcule e mostre a soma desses números.'); 
+				writeln;
+			      	Writeln('==================================================================');
+                                TextColor(4); writeln;
                                 write('Digite um número: '); readln(n1); writeln;
                                 write('Digite um número: '); readln(n2); writeln;
                                 write('Digite um número: '); readln(n3); writeln;
                                 write('Digite um número: '); readln(n4); writeln;
                                    soma := (n1 + n2 + n3 + n4);
-																writeln('Sua soma é: ',soma:2:2); writeln;
+				writeln('Sua soma é: ',soma:2:2); writeln;
                                 TextColor(10); 
-      										      Writeln('------------------------------------------------------------------'); writeln;
+      				Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 	
- 										            Writeln('Atividade concluida! Tecle algo para continuar.');
- 										            Readkey;
-						                 End;
- 			      			      '2': Begin    
-															  ClrScr;
+ 			        Writeln('Atividade concluida! Tecle algo para continuar.');
+ 				Readkey;
+			     End;
+ 		        '2': Begin    
+			        ClrScr;
                                 TextColor(10);
-																Writeln('2 - Faça um algoritmo que receba três notas, calcule e mostre a média aritmética entre elas.');  
+			//INDENTAR													Writeln('2 - Faça um algoritmo que receba três notas, calcule e mostre a média aritmética entre elas.');  
 																writeln(' ');
 			      		        				Writeln('==================================================================');  writeln;
                                 TextColor(4);
