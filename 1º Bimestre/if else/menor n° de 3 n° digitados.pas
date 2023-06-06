@@ -1,4 +1,4 @@
-(*1 – Escreva um algoritmo para descobrir o menor número entre três valores digitados.*)
+(*1 – Escreva um algoritmo para descobrir o menor número entre 3 valores digitados.*)
 
 Program MenorNde3Var;
   var n1, n2, n3: integer;
