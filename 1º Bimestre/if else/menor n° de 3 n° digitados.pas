@@ -1,30 +1,29 @@
-(*1 – Escreva um algoritmo para descobrir o menor 
-número entre três valores digitados.*)
+(*1 â€“ Escreva um algoritmo para descobrir o menor nÃºmero entre trÃªs valores digitados.*)
 
 Program Pzim ;
   var n1, n2, n3: integer;
 Begin
-  write('Digite um número: ');
+  write('Digite um nÃºmero: ');
    read(n1);
    
-  write('Digite um número: ');
+  write('Digite um nÃºmero: ');
    read(n2);
    
-  write('Digite um número: ');
+  write('Digite um nÃºmero: ');
    read(n3); 
    
-   if(n1<n2) and (n1<n3) then
+   if ( n1 < n2 ) and ( n1 < n3 ) then
     begin
-     write('O menor número é: ', n1);
+     write('O menor nÃºmero Ã©: ', n1);
     end;
     
-    if(n2<n1) and (n2<n3) then
+    if ( n2 < n1 ) and ( n2 < n3 ) then
     begin
-     write('O menor número é: ', n2);
+     write('O menor nÃºmero Ã©: ', n2);
     end;
     
-    if(n3<n1) and (n3<n2) then
+    if ( n3 < n1 ) and ( n3 < n2 ) then
      begin
-      write('O menor número é: ', n3);
+      write('O menor nÃºmero Ã©: ', n3);
 		 end;
 End.
