@@ -4,26 +4,22 @@ Program Pzim ;
   var n1, n2, n3: integer;
 Begin
   write('Digite um número: ');
-   read(n1);
-   
+   read(n1); writeln;
   write('Digite um número: ');
-   read(n2);
-   
+   read(n2); writeln;
   write('Digite um número: ');
-   read(n3); 
-   
-   if ( n1 < n2 ) and ( n1 < n3 ) then
+   read(n3); writeln; 
+  if ( n1 <= n2 ) and ( n1 <= n3 ) then
     begin
      write('O menor número é: ', n1);
-    end;
-    
-    if ( n2 < n1 ) and ( n2 < n3 ) then
+    end
+  else if( n2 <= n1 ) and ( n2 <= n3 ) then
     begin
      write('O menor número é: ', n2);
-    end;
-    
-    if ( n3 < n1 ) and ( n3 < n2 ) then
+    end
+  else if( n3 <= n1 ) and ( n3 <= n2 ) then
      begin
       write('O menor número é: ', n3);
-		 end;
+     end;
+     readkey;
 End.
