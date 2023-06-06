@@ -1,6 +1,6 @@
 (*1 – Escreva um algoritmo para descobrir o menor número entre três valores digitados.*)
 
-Program Pzim ;
+Program MenorNde3Var;
   var n1, n2, n3: integer;
 Begin
   write('Digite um número: ');
