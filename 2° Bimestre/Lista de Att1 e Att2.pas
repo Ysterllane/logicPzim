@@ -176,7 +176,7 @@ Begin
                                    ma:= (nt1+nt2+nt3)/3;	 
                                 writeln('Sua média aritimética é: ', ma:2:2);  writeln;
                                    adicao := nt1 + nt2 + nt3 + nt4;
-																writeln('Sua soma é: ', adicao:2:2); writeln;
+																writeln('Sua soma é: ', adicao:2:2 ); writeln;
                                 TextColor(10); 
       										      Writeln('------------------------------------------------------------------'); writeln;
                                 TextColor(7); 	
