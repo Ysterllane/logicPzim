@@ -125,7 +125,7 @@ Begin
  										      writeln('11) Receba: a) o código do produto comprado; b) a quantidade comprada do produto. Calcule e exiba:');
                           writeln;
 													writeln('O preço unitário do produto comprado de acordo com a tabela A;');
-                          writeln('O valor total da compra;');
+                          writeln('O valor total da compra; ');
                           writeln('O desconto sobre o total da compra, segundo a tabela B;');
                           writeln('O valor final da compra depois de aplicado o desconto.');
                           Writeln;
