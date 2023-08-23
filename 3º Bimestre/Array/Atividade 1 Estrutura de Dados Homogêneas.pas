@@ -10,8 +10,9 @@ Begin
  soma:=0;
  For i := 1 to 5 do
  begin
-  Read(x[i]);  
-  writeln;
+  write('Diga o número ',i,': ');
+  Readln(x[i]);
+	writeln;  
   if(x[i] mod 2 = 1) then
      soma:=soma+x[i];
  End;
