@@ -1,0 +1,13 @@
+Program Pzim ;
+var comeco, meio, final: integer; 
+    acha : string;
+Begin
+ comeco := 1;
+ final := 10;
+ acha := falso;
+ 
+ while (comeco <= final) and (acha = falso) do
+ begin
+   meio := (comeco + final) / 2;
+	 if (pesq = nome[meio]) then
+End.
